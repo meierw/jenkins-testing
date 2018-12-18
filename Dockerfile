@@ -4,6 +4,7 @@ FROM jenkins/jenkins:lts-alpine
 #   + simple-theme-plugin
 #   + job-dsl
 RUN /usr/local/bin/install-plugins.sh \
+    jdk-tool \
     cloudbees-folder \
     antisamy-markup-formatter \
     build-timeout \
@@ -24,7 +25,6 @@ RUN /usr/local/bin/install-plugins.sh \
     ldap \
     email-ext \
     mailer \
-    jdk-tool \
     simple-theme-plugin \
     job-dsl
 
